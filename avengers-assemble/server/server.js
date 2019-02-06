@@ -6,17 +6,50 @@ const app = express();
 const {SERVER_PORT} = process.env;
 
 let avengers = [
-    "Stever Rogers",
-    "Bucky Barnes",
-    "Tony Stark",
-    "Thor Odinson",
-    "Bruce Banner",
-    "Natasha Rominov",
-    "Clint Barton",
-    "Peter Parker",
-    "Dr. Strange",
-    "Peter Quill",
-    "Loki Odinson"
+    {
+        name: "Stever Rogers",
+        power: 500
+    },
+    {
+        name: "Bucky Barnes",
+        power: 400
+    },
+    {
+        name: "Tony Stark",
+        power: 300
+    },
+    {
+        name: "Thor Odinson",
+        power: 900
+    },
+    {
+        name: "Bruce Banner",
+        power: 400
+    },
+    {
+        name: "Natasha Rominov",
+        power: 600
+    },
+    {
+        name: "Clint Barton",
+        power: 300
+    },
+    {
+        name: "Peter Parker",
+        power: 700
+    },
+    {
+        name: "Dr. Strange",
+        power: 900
+    },
+    {
+        name:  "Peter Quill",
+        power: 300
+    },
+    {
+        name: "Loki Odinson",
+        power: 600
+    }
 ]
 
 
