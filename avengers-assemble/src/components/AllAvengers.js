@@ -12,7 +12,7 @@ class AllAvengers extends Component {
     componentDidMount(){
         axios.get('/api/all-avengers')
             .then(res => {
-                console.log(res)
+                console.log(res.data)
             })
     }
 
