@@ -5,7 +5,8 @@ let initialState = {
 }
 
 const ADD_TO_CAP = 'ADD_TO_CAP';
-const ADD_TO_STARK = 'ADD_TO_STARK'
+const ADD_TO_STARK = 'ADD_TO_STARK';
+const GET_ALL = 'GET_ALL'
 
 export default function reducer(state=initialState, action){
     switch(action.type){
@@ -13,8 +14,17 @@ export default function reducer(state=initialState, action){
             return Object.assign({}, state, {teamCap: [...state.teamCap, action.payload]});
         case ADD_TO_STARK:
             return Object.assign({}, state, {teamStark: [...state.teamStark, action.payload]})
+        case GET_ALL:
+            return Object.assign({}, state, {allAvengers: action.payload})
         default:
             return state;
+    }
+}
+
+export function getAvengers(avengersList){
+    return {
+        type: GET_ALL,
+        payload: avengersList
     }
 }
 
